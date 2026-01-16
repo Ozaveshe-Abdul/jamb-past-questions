@@ -34,25 +34,32 @@ For each subject:
 1. Create a main folder in `Categorized-Questions/` for the subject (e.g., `Categorized-Questions/Physics/`)
 2. For each main topic, create a subfolder (e.g., `Categorized-Questions/Physics/Measurements-and-Units/`)
 3. Inside each topic folder, create a `questions.md` file with the topic name as the header
+4. Then within each main topic md file, let every subheading  be written and its questions written under it.
+
+NOTE: this means categorization is (Main topic -> sub topic -> questions
 
 ### Step 3: Extract and Categorize Questions
-1. Use `pdftotext` to convert past questions PDF to text
-2. Parse the extracted text to identify:
+1. Dont use automated script, read the question manually and categorize it. 
+2. read the question text to identify:
    - Question numbers
    - Year markers (e.g., "2010 JAMB PHYSICS QUESTIONS")
    - Question text
-   - Options (A, B, C, D)
+   - Options (A, B, C, D), Make sure to write options on seperate lines
    - Diagram references (if any)
 3. Match each question to its corresponding topic based on:
    - Content analysis (subject matter)
    - Keywords related to topics
 4. Append categorized questions to the appropriate topic's `questions.md` file
+5. Finish each topic before moving to the next.
+6. Dont try to finish everything in one go, do 2 topics or more and take a break, dont overwhelm yourself by attempting to do everything once.
+NOTE: dont use script read and write manually, disregard the time it will take.
 
 ### Step 4: Format Questions in Markdown
 Each question should be formatted as:
 ```markdown
 # [Topic Name]
 
+# [Sub-topic Name]
 ## Question 1 (2010: Q5)
 [Question text here]
 
@@ -70,48 +77,11 @@ D. [Option D]
 - If not possible: Add reference note: `[Diagram reference: See original PDF, [Year] [Subject] Question [Number]]`
 
 ## Topic Extraction Rules
+1. Dont use scripts
+2. Extract manually for maximum accuracy
 
 ### For Physics Syllabus
-Main topics identified:
-1. Measurements and Units
-2. Limitations of Experimental Measurements
-3. Motion
-4. Gravitational Field
-5. Equilibrium of Forces
-6. Work, Energy and Power
-7. Friction
-8. Friction (continuation with viscosity)
-9. Elasticity: Hooke's Law and Young's Modulus
-10. Pressure
-11. Liquids At Rest
-12. Temperature and Its Measurement
-13. Thermal Expansion
-14. Gas Laws
-15. Quantity of Heat
-16. Change of State
-17. Vapours
-18. Structure of Matter and Kinetic Theory
-19. Heat Transfer
-20. Waves
-21. Propagation of Sound Waves
-22. Characteristics of Sound Waves
-23. Light Energy
-24. Reflection of Light at Plane and Curved Surfaces
-25. Refraction of Light Through at Plane and Curved Surfaces
-26. Optical Instruments
-27. Dispersion of light and colours
-28. Electrostatics
-29. Capacitors
-30. Electric Cells
-31. Current Electricity
-32. Electrical Energy and Power
-33. Magnets and Magnetic Fields
-34. Force on a Current-Carrying Conductor in a Magnetic Field
-35. Electromagnetic Induction
-36. Simple A.C. Circuits
-37. Conduction of Electricity Through Liquids
-38. Elementary Modern Physics-Bohr's Theory
-39. Introductory Electronics
+**Pending**
 
 ### For Chemistry Syllabus
 **PENDING**: Chemistry syllabus PDF must be provided by user before topics can be extracted.
@@ -121,10 +91,49 @@ Main topics identified:
 ### Physics
 - [x] Syllabus topics fully extracted (39 topics identified)
 - [x] All topic folders created
-- [x] All questions categorized and written to markdown (486 questions parsed using raw text extraction, significantly improved quality)
+- [ ] All questions categorized and written to markdown (59 questions categorized so far - 9/39 topics completed)
+  - [x] Measurements and Units (7 questions)
+  - [x] Scalars and Vectors (3 questions)
+  - [x] Motion (19 questions)
+  - [x] Gravitational Field (3 questions)
+  - [x] Equilibrium of Forces (5 questions)
+  - [x] Work, Energy and Power (9 questions)
+  - [x] Friction (3 questions)
+  - [x] Simple Machines (1 question)
+  - [x] Elasticity: Hooke's Law and Young's Modulus (3 questions)
+  - [ ] Pressure (0 questions)
+  - [ ] Liquids At Rest (0 questions)
+  - [ ] Temperature and Its Measurement (0 questions)
+  - [ ] Thermal Expansion (0 questions)
+  - [ ] Gas Laws (0 questions)
+  - [ ] Quantity of Heat (0 questions)
+  - [ ] Change of State (0 questions)
+  - [ ] Vapours (0 questions)
+  - [ ] Structure of Matter and Kinetic Theory (0 questions)
+  - [ ] Heat Transfer (0 questions)
+  - [ ] Waves (0 questions)
+  - [ ] Propagation of Sound Waves (0 questions)
+  - [ ] Characteristics of Sound Waves (0 questions)
+  - [ ] Light Energy (0 questions)
+  - [ ] Reflection of Light at Plane and Curved Surfaces (0 questions)
+  - [ ] Refraction of Light Through at Plane and Curved Surfaces (0 questions)
+  - [ ] Optical Instruments (0 questions)
+  - [ ] Dispersion of light and colours (0 questions)
+  - [ ] Electrostatics (0 questions)
+  - [ ] Capacitors (0 questions)
+  - [ ] Electric Cells (0 questions)
+  - [ ] Current Electricity (0 questions)
+  - [ ] Electrical Energy and Power (0 questions)
+  - [ ] Magnets and Magnetic Fields (0 questions)
+  - [ ] Force on a Current-Carrying Conductor in a Magnetic Field (0 questions)
+  - [ ] Electromagnetic Induction (0 questions)
+  - [ ] Simple A.C. Circuits (0 questions)
+  - [ ] Conduction of Electricity Through Liquids (0 questions)
+  - [ ] Elementary Modern Physics-Bohr's Theory (0 questions)
+  - [ ] Introductory Electronics (0 questions)
 - [ ] Diagrams handled appropriately (pending - using references only)
 - [ ] Clean up garbled text (some questions have minor text issues due to PDF formatting)
-- [ ] Review uncategorized questions and manually assign to topics (68 questions currently in Uncategorized, many are answer keys or fragments)
+- [ ] Review uncategorized questions and manually assign to topics
 - [ ] Verify all questions are correctly categorized and remove any misassigned ones
 
 ### Chemistry
@@ -153,3 +162,6 @@ Main topics identified:
 4. Always append original question year and number in brackets after each question
 5. Ask user if syllabus or past questions PDF is missing for any subject
 6. Maintain clean folder structure with descriptive, hyphenated names
+7. don't use script or any form of automation, read and write manually. Disregard the time it will take.
+8. Dont't try to accoomplish everything in one go to maintain maximum accuraccy.
+9. After each successful section/milestone document progress, so you or another agent instance can continue where you left

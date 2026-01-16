@@ -1,2 +1,0 @@
-# Electrical Energy and Power
-

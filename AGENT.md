@@ -33,7 +33,7 @@ When prompted for this task:
 - Preserve exact topic naming conventions (capitalization, wording)
 
 ### 5. Question Categorization
-- Match questions to topics based ONLY on the content in the question text
+- Match questions to topics based ONLY on the content or context in the question 
 - Do NOT assume context or create connections not present in the question
 - If a question's topic is unclear, you may:
   - Mark it with `[Uncategorized - needs review]`
@@ -45,7 +45,7 @@ Each question MUST include:
 - Sequential numbering within its topic
 - Original year and question number in brackets: `(Year: Q#)`
 - Full question text exactly as appears in PDF
-- All options (A, B, C, D) as written
+- All options (A, B, C, D) as written. Each option should be on a seperate line
 - Diagram reference if applicable
 
 Format:
